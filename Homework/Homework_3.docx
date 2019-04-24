@@ -1,0 +1,68 @@
+1. SET.  Suppose PI = 78, OI =95. The hash function is h(x) = (x+13) mod 291. The customer's key pair is: 
+
+public key{17, 377},  private key{257, 377}.  Concatenation works like this:  23||45 = 2345.  Assume that both the merchant and the bank know the public key of the customer. The signature algorithm is RSA.
+
+1) What's the dual signature created by the customer? Describe in detail how the customer create it.
+
+2) What information does the merchant need to know to verify the dual signature and how to verify it?
+
+3) What information does the bank need to know to verify the dual signature and how to verify it?
+
+2. (AONDS) Alice has the following 4 12-bit secrets for sale:
+            S1=1191, S2=1572, S3=2461 S4=1568
+    Bob wants to buy S1 and Carol wants to buy S2.
+
+The key pair for Bob is n=7387, e=5145, d=777. The key pair for Carol is n=2747,e=1421,d=2261. She tells Bob and Carol each their public key
+
+Please describe step by step how Bob and Carol buy the secrets they want without letting Alice know which secrets they are buying.
+
+ 
+
+3.(Shamir's secret sharing) Construct (3,4) threshold scheme to share a secret S = 18.
+
+a) Create a secure polynomial.
+
+b) Assign each participant a share.
+
+c) Show how any 3 of the participant pool their shares to recover the secret S.
+
+(Note: It's up to you to decide the values involved in the computation)
+
+4. (Generalized secret sharing).  Suppose there are 5 participants {P1, P2,P3,P4,P5} and the access structure AS is { {P1, P2, P5}, {P2, P4}, {P3,P5} }.  Use Shamir's scheme to assign each participant share(s) so that only authorized group of participants can recover the secret.
+
+(Note: you don't need to assign each participant specific values. Use s1, s2,... to denote the shares)
+
+5. (Verifiable secret sharing). Construct a (3,3) verifiable threshold scheme to share a secret S=24.
+
+a) How does the dealer construct a secure polynomial?
+
+b) Assign each participant a share.
+
+c) What information does the dealer publish?
+
+d) How does each participant verify the validity of his/her share?
+
+(Note: It's up to you to decide the values involved in the computation. Suppose p is large enough. You don't need a specific value for g)
+
+6. (Proxy signature) In MUO's proxy signature scheme, p=239 and  g=7. The original signer's private key x=17.
+
+a) Generate a proxy key pair.
+
+b) How does the proxy signer verify the validity of the proxy key pair?
+
+c) The proxy signer needs to sign a message m=16 on behalf of the original signer. How does (S)he generate the proxy signature?
+
+d) How does a verifier verify the proxy signature?
+
+7. (Partially Blind signature) The signer's public key pair is (11,91) and he keeps (d,p,q)=(59, 7, 13) secure. A requester want the signer to sign m=19 with h(m)=18. The common information a is 25 with h(a) = 17.
+
+a) How does the requester blind m and what information does he send to the signer?
+
+b) After the signer receives the information sent by the requester, he selects a random number x=29 and send x the the requester. After the requester receives x, what does he do and what information does he send to the signer?
+
+c) How does the signer generate a blind signature?
+
+d) After the requester gets the blind signature, how does he extract the signature?
+
+e) How to verify the extracted signature?
+
